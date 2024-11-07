@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+.pangolin-regular {
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    background-color: #FDFEF9;
+    color: #3e3e3e;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    font-family: cursive;
+}
+
+h1{
+   margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 60px;
+}
+
+#wrong-letters{
+position: absolute;
+left: 80%;
+font-size: 15px;
+}
+
+
+
+.container {
+    padding: 20px 20px;
+    height: 450px;
+    width: 450px;
+    position: relative;
+}
+
+
+
+.grafik {
+    fill: transparent;
+    stroke: #3e3e3e;
+    stroke-width: 4px;
+}
+
+.item {
+     display: none; 
+}
+
+#play-again{
+padding: 10px;
+font-size: 15px;
+font-family: cursive;
+}
+
+#play-again i{
+    margin-right: 8px;
+}
+
+#wrong-letters {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#word {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter {
+    border-bottom: 3px solid #3e3e3e;
+    font-size: 30px;
+    margin: 0 3px;
+    height: 40px;
+    width: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-contanier{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.popup{
+    background-color: #629FCE;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 15px 19px 3px rgba(0, 0, 0, 0.1);
+}
+
+#message{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0px 80px;
+    position: absolute;
+    bottom: -120px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#message.show{
+    transform: translateY(-125px);
+}
